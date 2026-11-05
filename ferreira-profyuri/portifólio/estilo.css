@@ -1,0 +1,50 @@
+body{
+        margin:0;
+        background-color: rgb(95, 88, 88);
+        color: rgb(255, 255, 255);
+        font-family:Playpen Sans ;
+        /*text-align: center;*/
+    }
+    .secao{
+        max-width:1000px ;
+        margin:0 auto;
+        padding:70px 40px ;
+        border-radius:7px ;
+    }
+    
+    img{
+        width:180px ;
+        border:5px ;
+        border-radius:25px;
+    }
+    .fundo{
+        background-color: rgb(41, 33, 30);
+        max-width: none;
+
+        
+    }
+    .sobre{
+        display:flex;
+        gap: 40px;
+    }
+    .sobre p{
+        width:50%;
+    }
+    .lista-inf{
+     background:rgba(255, 255, 255, 0.479) ;
+     border-left:6px solid rgb(255, 255, 254) ;
+     padding:40px;
+     list-style: none;
+    }
+    .lista-inf li{ margin-bottom:10px ;
+    }
+    .cartao{
+        margin-bottom:18px ;
+        padding:15px;
+        /*criar borda*/
+        border:1px solid rgb(44, 41, 38) ;
+        border-radius: 10px;
+        background:rgb(150, 150, 150) ;
+        /*sombra*/
+        box-shadow:2px 2px 20px rgb(22, 18, 18) ;
+    }

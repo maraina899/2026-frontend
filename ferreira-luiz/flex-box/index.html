@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+    h1{
+    color:rgb(46, 44, 44)
+    }
+    body{
+        font-family:sans-serif;
+        background-color: dimgray;
+    }
+    .elementoFilho{
+        background-color: aliceblue;
+        /*espaçamento interno*/
+        padding: 15px;
+        text-align: center;
+        border-radius:20px ;
+        /*largura maxima*/
+        max-width:300px;
+    }
+    .elementoFilho img{
+        width:100%;
+        border-radius:10px;
+    }
+    .elementoPai{
+        display:flex;
+        /*define a direção dos elementos - direção, esquerda*/
+        flex-direction:row;
+        /*gerara quebra de linha automática*/
+        flex-wrap: wrap;
+        /*definir espaçamentos*/
+        gap:20px;
+        /*centralizar esquerda direita*/
+        justify-content: center;
+        /*centralizar acima abaixo*/
+        align-items: center;
+        height:100vh ;
+    }
+    .preco{
+    color: rgb(70, 67, 67);
+    font-weight:bold;
+    }
+    button{
+        background-color: rgb(161, 158, 158);
+        border:none;
+        padding:5px;
+        border-radius:10px;
+        color: aliceblue;
+        box-shadow:2px 2px 9px black ;
+    }
+    button:hover{
+        background-color: black;
+        scale:1.2;
+        transition:1s;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <h1> flex-box</h1>
+    <h3 style=color:black>alinhamento</h3>
+  <div class="elementoPai">
+
+   <div class="elementoFilho">
+     <img src="https://www.minutoseguros.com.br/blog/wp-content/uploads/2022/08/onix-1.jpg">
+     <h4> Chevrolet Onix</h4>
+     <p> 2022 - flex - 10.000km</p>
+     <p class="preco"> R$99.000</p>
+     <button> Comprar</button>
+    </div>
+
+    <div class="elementoFilho">
+     <img src="https://cdn.motor1.com/images/mgl/mBrOo/s1/honda-civic-exl-2020.webp">
+     <h4> Honda Civic</h4>
+     <p> 2021 - flex - 10.000km</p>
+     <p class="preco"> R$112.000 </p>
+     <button> Comprar</button>
+    </div>
+
+      <div class="elementoFilho">
+     <img src="https://www.skylldistribuidora.com.br/uploads/blog_posts/20/thumb-800-0/f2c670d11b1f28a942e4c1e25fb56f47.jpg">
+     <h4> BMW X5</h4>
+     <p> 2021 - flex - 25.000km</p>
+     <p class="preco"> R$580.000 </p>
+     <button> Comprar</button>
+    </div>
+
+     <div class="elementoFilho">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oIvaYEKLCRniBD9Er-HtuUgVEBBc9R3QAD_VWmO6A2OWSfVxf9inW1vT&s=10">
+     <h4> Fusca</h4>
+     <p> 1995 - flex - 10.000km</p>
+     <p class="preco"> R$41.900 </p>
+     <button> Comprar</button>
+    </div>
+
+     <div class="elementoFilho">
+     <img src="https://hips.hearstapps.com/hmg-prod/images/impala-front-1669936153.png?crop=0.7911602209944751xw:1xh;center,top&resize=1200:*">
+     <h4>Impala 67</h4>
+     <p> 1967 - flex - 0km</p>
+     <p class="preco"> R$350.000 </p>
+     <button> Comprar</button>
+    </div>
+    </div>
+</body>
+</html>
